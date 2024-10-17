@@ -1,6 +1,6 @@
 "use client";
 import UserContextProvider from "@/context/UserContext";
-import { GlobalStyles } from "@/styles/GlobalStyles";
+import '@/styles/GlobalStyles.css'; // Importação do CSS global
 import React from "react";
 import { Menu } from "../menu/Menu";
 import { layoutStyles } from "./Layout.style";
@@ -13,7 +13,6 @@ export const Layout = ({ children }: LayoutProps) => {
     return (
         <div style={layoutStyles}>
             <UserContextProvider>
-                <GlobalStyles />
                 <main>{children}</main>
                 <Menu />
             </UserContextProvider>

@@ -1,5 +1,7 @@
+"use client"; // Adicione esta linha
+
 import { UserContext } from "@/context/UserContext";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation"; // Atualize a importação
 import { useContext } from "react";
 import {
     h1Styles,
