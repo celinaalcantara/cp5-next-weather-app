@@ -1,4 +1,3 @@
-// Input.style.ts
 export const labelStyles: React.CSSProperties = {
     display: 'block',
 };

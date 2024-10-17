@@ -1,4 +1,3 @@
-// src/app/profile/page.tsx
 "use client";
 import { jwtDecode } from "jwt-decode";
 import { useRouter } from "next/navigation";

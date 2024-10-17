@@ -1,4 +1,3 @@
-// Button.style.ts
 export const buttonStyles: React.CSSProperties = {
     border: "0",
     padding: "8px 12px",

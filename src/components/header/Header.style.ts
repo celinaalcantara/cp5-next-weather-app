@@ -1,4 +1,3 @@
-// Header.style.ts
 export const headerStyles: React.CSSProperties = {
     display: 'flex',
     justifyContent: 'space-between',

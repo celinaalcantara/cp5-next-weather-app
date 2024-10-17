@@ -1,9 +1,15 @@
-import { createContext, useState } from 'react';
+import React, { ReactNode, createContext, useState } from "react";
 
-export const UserContext = createContext({});
+interface UserContextType {
+    userName: string;
+    setUserName: (name: string) => void;
+}
 
-const UserContextProvider = ({ children }) => {
-    const [userName, setUserName] = useState('');
+const UserContext = createContext<UserContextType | undefined>(undefined);
+
+const UserContextProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+    const [userName, setUserName] = useState<string>("");
+
     return (
         <UserContext.Provider value={{ userName, setUserName }}>
             {children}
@@ -11,4 +17,5 @@ const UserContextProvider = ({ children }) => {
     );
 };
 
-export default UserContextProvider;
+export { UserContext, UserContextProvider };
+

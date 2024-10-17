@@ -1,7 +1,7 @@
-"use client"; // Adicione esta linha
+"use client";
 
 import { UserContext } from "@/context/UserContext";
-import { useRouter } from "next/navigation"; // Atualize a importação
+import { useRouter } from "next/navigation";
 import { useContext } from "react";
 import {
     h1Styles,
@@ -17,8 +17,7 @@ interface HeaderProps {
 
 export const Header = ({ title, userName }: HeaderProps) => {
     const router = useRouter();
-    const { setUserName } = useContext(UserContext) as any; // Ajuste o tipo conforme necessário
-
+    const { setUserName } = useContext(UserContext) as any;
     const handleLogin = () => {
         router.push("/login");
     };

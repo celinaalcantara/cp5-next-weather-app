@@ -4,12 +4,12 @@ import { Button } from '@/components/button/Button';
 import { Header } from '@/components/header/Header';
 import { Input } from '@/components/input/Input';
 import { Layout } from '@/components/layout/Layout';
-import { UserContext } from '@/context/UserContext'; // Corrija a importação aqui
+import { UserContext } from '@/context/UserContext';
 import { useRouter } from 'next/navigation';
 import { useContext, useState } from 'react';
 
 export default function Home() {
-  const { userName } = useContext(UserContext); // Verifique se UserContext está correto
+  const { userName } = useContext(UserContext);
   const router = useRouter();
 
   const [cityName, setCityName] = useState<string>('');
@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   const handleSearch = () => {
-    // Navegar para a página de busca com o nome da cidade
+
     router.push(`/search?city=${cityName}`);
   };
 

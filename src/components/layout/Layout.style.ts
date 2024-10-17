@@ -1,4 +1,3 @@
-// Layout.style.ts
 export const layoutStyles: React.CSSProperties = {
     width: '92vw',
     margin: '3vw auto',
